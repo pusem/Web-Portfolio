@@ -1,0 +1,64 @@
+<!-- about content -->
+  <section class="about" id="about">
+    <div class="max-width">
+      <h2 class="title">About Me</h2>
+      <div class="about-content">
+        <div class="column left">
+          <img src="imgs/Blxck-icon.png" alt="Image of Pusetso Mguzulwa">
+        </div>
+        <div class="column right">
+          <div class="text">I'm Pusetso Mguzulwa. I'm a Web Developer and an IT
+            Technician.</div>
+          <p>I'm an IT graduate from Rosebank College aspiring to specialise in the field of Information Technology (IT)
+            and eventually, Computer Science (CS). I'm based in Klerksdorp, Khuma and actively looking for a Web
+            Development or/and an IT internship, apprenticeship as I don't have any previous work experience yet and
+            without that, I'm finding it tough to land a job inline with my career. So I freelance in order to improve
+            my skills, broaden my knowledge and get on-the-job experience from clients willing to give me the chance to
+            offer my services to them. I'm currently part of Platinum North West TV's editing team as a Volunteer
+            Subtitle and News Editor. Platinum North West TV is a community television channel based in North
+            West, Klerksdorp and their shows play on Star Sat, channel 120.<br /><b>Do you know any company offering
+              graduates IT or Web Development Internships? Message <a href="#contact">me</a></b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- services section start -->
+  <section class="services" id="services">
+    <div class="max-width">
+      <h2 class="title">My Skills</h2>
+      <h2 class="title" color="blue">My Services</h2>
+      <div class="services-content">
+        <div class="card">
+          <div class="box">
+            <div class="text">Web Development</div>
+            <p></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">IT Support</div>
+            <p></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">Transcription</div>
+            <p></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">Adobe Premiere Pro</div>
+            <p></p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="box">
+            <div class="text">CAT Tutoring</div>
+            <p>Computer Applications Technology</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

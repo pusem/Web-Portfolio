@@ -1,0 +1,353 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* similar content styling */
+section{
+    padding: 95px 0;
+}
+.max-width{
+    min-width: 100%;
+    height: auto;
+    padding: 0 50px;
+    margin: auto;
+}
+.about, .services, .contact, footer{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*.about, .services, .contact*/
+.about .about-content,
+.services .services-content,
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: unset;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 0;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* navbar styling*/
+.navbar .logo{
+    float: left;
+    display: block;
+    font-size: 20px;
+    padding: 20px;
+    color:white;
+    background-color: rgba(255, 99, 71, 0.144);
+}
+.navbar{
+    background-color:rgba(192, 192, 192, 0);
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 99, 71, 0.144);
+    border-radius: 6px;
+}
+
+.navbar ul a{
+    color: white;
+    display: block;
+    padding: 20px;
+    font-size: 17px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    transition: .5s;
+}
+.navbar ul a:hover{
+    color:rgb(1, 255, 242);
+    transition: .5s;
+    font-size: 30px;
+}
+
+.navbar .menu{
+    clear: both;
+    max-height: 0;
+    transition: max-height ,2s ease-out;
+}
+.navbar .menu-icon{
+    padding: 28px 20px;
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+.navbar .menu-icon .nav-icon{
+    background: rgb(1, 255, 242);
+    display: block;
+    height: 2px;
+    width: 18px;
+    position: relative;
+    transition: background .2s ease-out;
+}
+.navbar .menu-icon .nav-icon:before{
+    background:rgb(1, 255, 242);
+    content: "";
+    display: block;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     transition: all .2s ease-out;
+     top: 5px;
+}
+.navbar .menu-icon .nav-icon:after{
+    background: rgb(1, 255, 242);
+    content: "";
+    display: block;
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     transition: all .2s ease-out;
+     top: -5px;
+}
+.navbar .menu-btn{
+    display: none;
+}
+.navbar .menu-btn:checked ~ .menu{
+    max-height: 240px;
+}
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon{
+    background: transparent;
+}
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon:before{
+    transform: rotate(-45deg);
+    top: 0;
+}
+.navbar .menu-btn:checked ~ .menu-icon .nav-icon:after{
+    transform: rotate(45deg);
+    top: 0;
+}
+@media (min-width:40em){
+    .navbar li{
+        float:left;
+    }
+    .navbar li a{
+        padding: 20px 30px;
+    }
+    .navbar .menu{
+        clear: none;
+        float: right;
+        max-height: none;
+    }
+    .navbar .menu-icon{
+        display: none;
+    }
+}
+
+nav ul li img.icon{
+    height: 15px;
+    width: 20px;
+}
+/* home section styling */
+.home{
+    display: flex;
+    background: url("../imgs/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.home .max-width .home-row{
+    margin-right: 0;
+}
+.home .home-content a{
+    display: inline-block;
+    background: cornflowerblue;
+    color: white;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 400;
+    border-radius: 6px;
+    border: 2px solid cornflowerblue;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    color: cornflowerblue;
+    background: none;
+}
+
+/* about section styling */
+
+/* services section */
+
+/* contact section styling */
+.contact{
+    background-color: rgba(74, 178, 209, 0.767);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px;
+}
+.contact .contact-content .left{
+    margin-top: 50px;
+}
+.contact .contact-content .left p{
+    text-align:center;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+.contact .contact-content .row{
+    display: flex;
+    height: auto;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 25px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: cornflowerblue;
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info img{
+    height: 5em;
+    border-radius: 100%
+}
+.contact .contact-content .info img:hover{
+    height: 7em;
+    box-shadow: 1px 1px 5px 5px cornflowerblue;
+}
+/* contact table */
+.contact .right form{
+    border: 15px solid cornflowerblue;
+    border-radius: 6px;
+    background: cornflowerblue;
+}
+.contact .right form:hover{
+    box-shadow: 1px 1px 10px 10px cornflowerblue;
+}
+
+.contact .right form .fields{
+    display: flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 4em;
+    width: 100%;
+    margin-bottom: 12px;
+}
+.contact .right form .textarea{
+    height: 7em;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid cornflowerblue;
+    background-color:rgba(74, 178, 209, 0.767);
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .textarea textarea{
+    padding-top: 50px;
+    resize: none;
+}
+.contact .right form .button-area{
+    display: flex;
+    align-items: center;
+}
+.right form .button-area button{
+    color:white;
+    display: block;
+    height: 100%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid cornflowerblue;
+    text-transform: uppercase;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: grey;
+    transition: all 0.3s ease;
+}
+.right form .button-area button:hover{
+    color: lime;
+    background: green;
+}
+
+/* Notification Status */
+
+/* gallery */
+.gallery{
+    background: rgb(22, 23, 53);
+    padding: 10px;
+    min-height: 555px;
+    padding: 10px;
+}
+.gallery h2{
+    text-align: center;
+    color:rgb(39, 92, 136);
+    font-size: 2em;
+    text-decoration: underline;
+    margin: 75px;
+}
+.gallery-content a{
+    size: 50;
+}
+.folder1 img{
+    height: 100px;
+    border-radius: 6px;
+    border: 2px solid rgb(171, 171, 182);
+}
+.folder1 img:hover{
+    box-shadow:1px 10px 30px rgb(171, 171, 182);
+}
+.folder2 img{
+    height: 100px;
+    border-radius: 6px;
+    border: 2px solid goldenrod;
+}
+.folder2 img:hover{
+    box-shadow: 1px 10px 30px goldenrod;
+}
+
+/* footer section styling */
+footer{
+    background: rgb(21, 115, 128);
+    padding: 10px 20px;
+    color: white;
+    text-align: center;
+}
+footer p{
+    font-size: 1em;
+    text-align: center;
+    color: rgb(58, 56, 56);
+}
