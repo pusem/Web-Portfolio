@@ -6,4 +6,4 @@ My Web Portfolio to showcase my skills and experience. I will keep on updating t
   💞️ I’m looking to collaborate on learning JS and Python.
   📫 How to reach me: Github | Instagram: @phik_eli
   
-Follow me on https://github.com/pusem and check out my website, https://pusem.github.io/Web-Portfolio/.
+Follow me on https://github.com/pusem and check out my website, https://pusem.github.io/myportfolio/.
