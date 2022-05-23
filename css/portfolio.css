@@ -4,6 +4,7 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 html{
     scroll-behavior: smooth;
@@ -12,6 +13,7 @@ html{
 /* similar content styling */
 section{
     padding: 95px 0;
+    background-color: grey;
 }
 .max-width{
     min-width: 100%;
@@ -24,8 +26,8 @@ section{
 }
 
 /*.about, .services, .contact*/
-.about .about-content,
-.services .services-content,
+.about,
+.services ,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +46,7 @@ section{
     border-radius: 6px;
 }
 .navbar{
-    background-color: rgba(255, 99, 71, 0.144);
+    background-color: rgba(128, 128, 128, 0.438);
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -68,7 +70,7 @@ section{
     transition: .5s;
 }
 .navbar ul a:hover{
-    color:rgb(1, 255, 242);
+    color:rgb(4, 78, 75);
     transition: .5s;
     font-size: 22px;
 }
@@ -152,23 +154,75 @@ nav ul li img.icon{
 }
 /* home section styling */
 .home{
-    background: url("../imgs/dapper0.jpg") no-repeat center;
     height: 100vh;
-    color: rgb(71, 71, 71);
     min-height: 500px;
-    background-size: cover;
+    background: url("../imgs/color-phik.png") no-repeat center;
+    background-size:cover;
     background-attachment: fixed;
-    transition: 1s;
+    color: grey;
 }
-.home:hover{
+/* .home:hover{
     background: url("../imgs/dapper.jpg") no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     transition: 1s;
-}
-.home .max-width .home-row{
-    margin-right: 0;
-}
+} */
+
+.wrapper{
+    display: flex;
+    justify-content: left;
+    padding: 20px;
+    align-items: center;
+    min-height: 50vh;
+  }
+  .wrapper .static-txt{
+    color: blanchedalmond;
+    font-size: 60px;
+    font-weight: 400;
+  }
+  .wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+  }
+  .dynamic-txts li{
+    list-style: none;
+    color: cornflowerblue;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+  }
+  @keyframes slide {
+    100%{
+      top: -360px;
+    }
+  }
+  .dynamic-txts li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 80px;
+  }
+  .dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: grey;
+    border-left: 2px solid white;
+    animation: typing 3s steps(15) infinite;
+  }
+  @keyframes typing {
+    40%, 60%{
+      left: calc(100% + 30px);
+    }
+    100%{
+      left: 0;
+    }
+  }
 
 /* about section styling */
 .about h2{
@@ -182,15 +236,14 @@ nav ul li img.icon{
     background-color: rgb(95, 158, 160);
 }
 /* services section */
-.services h2{
+.skills h2{
     text-align: center;
     color: rgba(58, 23, 82, 0.767);
     font-size: 2em;
     text-decoration:  underline;
 }
-.services{
+.skills{
     min-height: 635px;
-    background-color: rgba(58, 23, 82, 0.767);
 }
 /* contact section styling */
 .contact h2{
