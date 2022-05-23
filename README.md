@@ -1,8 +1,8 @@
-I'm currently a self-taught Front-end Developer and this repository will serve as my portfolio. I will keep on updating it as I continue learning Web Development.
+I'm a self-taught Front-end Developer and this repository will serve as my portfolio. I will keep on updating it as I continue learning Web Development.
   
   👋 Hi, I’m Puse, aspiring Full Stack Developer.
   👀 I’m interested in Web Development and Programming.
-  🌱 I’m currently learning JavaScript and Python.
+  🌱 I’m currently learning Python.
   💞️ I’m looking to collaborate on learning JS and Python.
   📫 How to reach me: Github
   
