@@ -6,4 +6,4 @@ I'm a self-taught Front-end Developer and this repository will serve as my portf
   💞️ I’m looking to collaborate on learning JS and Python.
   📫 How to reach me: Github and LinkedIn.
   
-Follow me on https://github.com/pusem and check out my website, https://pusem.github.io/myportfolio/.
+Follow me on https://github.com/pusetsom and check out my website, https://pusem.github.io/myportfolio/.
