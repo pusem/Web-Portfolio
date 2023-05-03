@@ -1,67 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
+<html>
+  <head>
+      <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pusetso Mguzulwa</title>
-  <link rel="stylesheet" href="css/portfolio.css">
+      <meta name="viewport" content="width=device-width">
+      <title>Portfolio site template</title>
+      <link href="css/portfolio.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="shortcut icon" href="imgs/Blxck-icon.png" />
-</head>
-
-<body>
-
-  <!-- nav/menu -->
-  <nav class="navbar">
-    <a href="gallery.html" class="logo">Eli's Tech.</a>
-    <input class="menu-btn" type="checkbox" id="menu-btn" />
-    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
-    <ul class="menu">
-      <li><a href="#home"><img src="imgs/social_Logos/home.png" class="icon" alt="home icon"> Home</a></li>
-      <li><a href="#about"><img src="imgs/social_Logos/about.png" class="icon" alt="about icon"> About</a></li>
-      <li><a href="#skills"><img src="imgs/social_Logos/skills-256.png" class="icon" alt="skills icon"> Services</a></li>
-      <li><a href="#contacts"><img src="imgs/social_Logos/envelope3.png" class="icon" alt="contacts icon"> Contacts</a>
-      </li>
-    </ul>
-  </nav>
-
-  <!-- home content -->
-  <section class="home" id="home">
-    <div class="right">
-        <div class="wrapper">
-          <div class="static-txt">I'm a</div>
-          <ul class="dynamic-txts">
-            <li><span>IT Graduate</span></li>
-            <li><span>Developer</span></li>
-            <li><span>Editor</span></li>
-            <li><span>Freelancer</span></li>
-          </ul>
-        </div>
-       
-  </section>
-
-  <!-- about content -->
-  <section class="about" id="about">
-    <h2 class="title">My About</h2>
-    <div class="about-content">
-      <!--<p>I am a certified IT Technician aspiring to specialise in IT. My passion is working with computers and solving some of the world's problems with code.</p>-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="js/script.js"></script>
+  </head>
+    <body>
+	  
+        <div class="container">
+	  
+		<!--────────────────Header───────────────-->
+	<header>
+		<a class="logo" href="#home">
+<!--       <img src="" alt="puse logo" /> -->
+		</a>
+		<nav>	
+		 <ul class="nav-bar"><div class="bg"></div>
+			<li><a class="nav-link" href="#home">Home</a></li>
+       <li><a class="nav-link" href="#about">About</a></li>
+			<li><a class="nav-link" href="#projects">Projects</a></li>
+			<li><a class="nav-link" href="#contact">Contact</a></li>
+		 </ul>
+      
+			<div class="hamburger">
+				<div class="line1"></div>
+            <div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<!--─────────────────Home────────────────-->
+	  <div id="home">
+		 <div class="filter"></div>
+		 <section class="intro">
+		  <div class="left">
+        <h3>Pusetso A Mguzulwa.<hr></h3>
+        <p>Web Developer | IT Technician | Video Editor</p>
+      </div>
+      <div class="singularity">
+        <h4>Singularity Card</h4>
+      </div>
+		 </section> 
+	  </div>  
+		<!--──────────────About────────────────-->
+    <div id="about">
+      <h3>About.<hr></h3>
+      <div class="left"></div>
+    
+      <div class="right">
+        <p>Something more about yourself.</p>
+      </div>
     </div>
-  </section>
-
-  <!-- skills and services content -->
-  <section class="skills" id="skills">
-    <h2 class="title">My Skills</h2>
-  </section>
-  
-  <!-- contact section styling -->
-  <section class="contact" id="contacts">
-    <div class="max-width">
-      <h2 class="title">My Contacts</h2>
-      <div class="contact-content">
-        <div class="column right">
-          <div class="text">Email Me</div>
-          <form class="contact-form" action="https://formsubmit.co/295b97d888a72f5814897f9e08fc5dc8" method="POST">
+	  <!--───────────────Projects───────────────-->
+	  <div id="projects"> 
+		 <h3>My Projects.<hr></h3>
+		  <p>Here are some of my projects, you may like.</p>
+		  <div class="work-box">
+		  <div class="work">
+		<!--───────────────card───────────────-->
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1518611507436-f9221403cca2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1225&q=80">
+			    <a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Continental Banking Site.</div></a>
+            </div>
+			<div class="card">
+			    <img class="work-img" src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80">
+				<a href="" target="_blank"> <!--Link to project-->
+				<div class="work-content">Lorem ipsum dolor sit amet consectetur.</div></a>
+            </div> 	  
+		  </div>
+		  </div>
+	  </div>
+		 
+		<!--──────────────Contact────────────────-->
+	  <div id="contact">
+		  <!--────email links─────-->
+		   <h3>Contact.<hr></h3>
+		   <p>Feel free to contact me via email through the form below or my social media.</p>
+      <form class="contact-form" action="https://formsubmit.co/295b97d888a72f5814897f9e08fc5dc8" method="POST">
             <div class="fields">
               <div class="field name">
                 <input type="text" name="_replyto" placeholder="Name & Surname" required>
@@ -81,57 +104,25 @@
               <button class="send-msg" type="submit">Send</button>
             </div>
           </form>
-        </div>
-        <div class="column left">
-          <div class="text">Get In Touch And Follow Me.</div>
-<!--           <div class="row">
-            <div class="info">
-              <a href="tel:+27677766605" class="sub-title"><img src="imgs/social_Logos/phone-call.png"
-                  alt="Call Me"></a>
-            </div>
-            <div class="info">
-              <a href="sms:+27677766605" class="sub-title"><img src="imgs/social_Logos/sms-marketing-blue.png"
-                  alt="Send an SMS"></a>
-            </div>
-          </div> -->
-          <div class="text">Social Media</div>
-          <div class="row">
-            <i class="fas fa-map-maker-alt"></i>
-            <div class="info">
-              <a href="https://www.linkedin.com/in/pusetso-mguzulwa" class="sub-title" target="_blank"><img
-                  src="imgs/social_Logos/linkedin-in-icon-logo1.png" alt="linkedin"></a>
-            </div>
-            <div class="info">
-              <a href="https://www.instagram.com/phik_eli/" class="sub-title" target="_blank"><img
-                  src="imgs/social_Logos/instagram-logo.png" alt="Instagram"></a>
-            </div>
-            <div class="info">
-              <a href="https://twitter.com/phik_eli" class="sub-title" target="_blank"><img
-                  src="imgs/social_Logos/twitter-logo.png" alt="Twitter"></a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="info">
-              <a href="https://github.com/pusetsom" class="sub-title" target="_blank"><img src="imgs/social_Logos/github.png" alt="Github"></a>
-            </div>
-            <div class="info">
-              <a href="https://www.codewars.com/users/PhIk_Eli" class="sub-title" target="_blank"><img src="imgs/social_Logos/codewars.png" alt="Codewars"></a>
-            </div>
-            <div class="info">
-              <a href="#" class="sub-title"><img src="imgs/social_Logos/youtube-icon-logo1.png" alt="YouTube Channel"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- footer -->
-  <footer>
-    <p>Pusetso -
+      <!-- Social media links -->
+		    <div class="social-media">
+<!-- 			  <a href="#" target="_blank"><i class='fab fa-codepen'></i></a>
+			  <a href="#" target="_blank"><i class='fab fa-twitter'></i></a> -->
+			  <a href="https://github.com/pusetsom" target="_blank"><i class='fab fa-github' alt="github"></i></a>
+			  <a href="https://www.linkedin.com/in/pusetso-mguzulwa" target="_blank"><i class='fab fa-linkedin-in' alt="linkedin"></i></a>
+<!-- 			  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a> -->
+		    </div>
+		  </div>
+
+	</main>
+	  <!-- footer -->
+  <footer class="copyright">
+    <p>Pusetso
       2021-
-      <script>document.write(new Date().getFullYear());</script> - All rights reserved.
+      <script>document.write(new Date().getFullYear());</script> | All rights reserved.
     </p>
   </footer>
-</body>
-
+	  
+  </div>  
+  </body>
 </html>
