@@ -206,10 +206,13 @@ h3 {
 
 .Puse {
   display: flex;
-  text-align: center;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  height: auto;
+  max-height: 100%;
+  width: 100%;
+  overflow: auto;
 }
 
 .Puse img {
