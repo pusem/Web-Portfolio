@@ -1,3 +1,5 @@
+Front End Web Developer and Video Edito
+
 👋 Hi, I’m Puse, an aspiring Full Stack Developer. This repository serves as my web portfolio.
 👀 I’m interested in Web Development and Programming.
 🌱 I’m currently learning Python.
