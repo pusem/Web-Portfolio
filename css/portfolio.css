@@ -335,64 +335,42 @@ h3 {
     contact form
 ──────────────────*/
 .contact-form {
-  margin-top: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-.fields {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 400px;
+  margin: auto;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 30px;
+  border-radius: 12px;
 }
 
 .field {
-  margin-bottom: 15px;
-  width: 100%;
-}
-
-.field.name,
-.field.email {
-  width: 50%;
+  margin-bottom: 10px;
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  width: 100%;
+  width: 94%;
   padding: 10px;
-  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-textarea {
-  height: 150px;
-}
-
-.subject {
+button.send-msg {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.button-area {
-  text-align: center;
-}
-
-.send-msg {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 20px;
+  padding: 10px 10px;
+  background-color: #659ac3;
+  font-size: 20px;
+  color: #fff;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 16px;
 }
 
-.send-msg:hover {
-  background-color: #45a049;
+button.send-msg:hover {
+  background-color: #507dab;
+}
+
+button.send-msg:focus {
+  outline: none;
 }
 
 /* Optional: Style error messages */
